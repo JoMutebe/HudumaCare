@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title></title>
+        <title>This the the basic page</title>
     </head>
     <body>
         <div></div>
