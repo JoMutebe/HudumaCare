@@ -15,6 +15,8 @@ class CreatePatientNeedsTable extends Migration
     {
         Schema::create('patient_needs', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

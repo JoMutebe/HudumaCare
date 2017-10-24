@@ -15,6 +15,8 @@ class CreateGoalOfCaresTable extends Migration
     {
         Schema::create('goal_of_cares', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

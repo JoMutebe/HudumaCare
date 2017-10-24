@@ -15,6 +15,8 @@ class CreateHospiceExplanationStatusesTable extends Migration
     {
         Schema::create('hospice_explanation_statuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

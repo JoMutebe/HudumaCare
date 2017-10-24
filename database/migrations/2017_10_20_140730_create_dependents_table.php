@@ -15,6 +15,12 @@ class CreateDependentsTable extends Migration
     {
         Schema::create('dependents', function (Blueprint $table) {
             $table->increments('id');
+           
+            $table->integer('social_assessment_id');
+            $table->integer('gender_id');
+            $table->string('ages');
+            $table->integer('number');
+            
             $table->timestamps();
         });
     }

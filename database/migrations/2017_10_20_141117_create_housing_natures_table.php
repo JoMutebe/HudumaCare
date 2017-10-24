@@ -15,6 +15,9 @@ class CreateHousingNaturesTable extends Migration
     {
         Schema::create('housing_natures', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->integer('score');
+            $table->longText('description');
             $table->timestamps();
         });
     }

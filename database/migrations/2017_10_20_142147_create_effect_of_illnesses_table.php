@@ -15,6 +15,8 @@ class CreateEffectOfIllnessesTable extends Migration
     {
         Schema::create('effect_of_illnesses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

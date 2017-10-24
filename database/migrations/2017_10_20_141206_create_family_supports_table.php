@@ -15,6 +15,7 @@ class CreateFamilySupportsTable extends Migration
     {
         Schema::create('family_supports', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('nature_of_support_id');
             $table->timestamps();
         });
     }

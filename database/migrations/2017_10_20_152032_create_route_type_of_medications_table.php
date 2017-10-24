@@ -15,6 +15,9 @@ class CreateRouteTypeOfMedicationsTable extends Migration
     {
         Schema::create('route_type_of_medications', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
+            
             $table->timestamps();
         });
     }

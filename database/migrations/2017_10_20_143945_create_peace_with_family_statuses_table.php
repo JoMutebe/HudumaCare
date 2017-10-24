@@ -15,6 +15,8 @@ class CreatePeaceWithFamilyStatusesTable extends Migration
     {
         Schema::create('peace_with_family_statuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

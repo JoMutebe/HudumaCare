@@ -15,6 +15,8 @@ class CreateFunctionalAssessmentsTable extends Migration
     {
         Schema::create('functional_assessments', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('function_id');
+          
             $table->timestamps();
         });
     }

@@ -15,6 +15,19 @@ class CreatePhysicalAssessmentsTable extends Migration
     {
         Schema::create('physical_assessments', function (Blueprint $table) {
             $table->increments('id');
+            $table->longText('general_description');
+            $table->intger('vital_signs_id');
+            $table->longText('skin');
+            $table->longText('head');
+            $table->longText('ears');
+            $table->longText('neck');
+            $table->longText('cvs');
+            $table->longText('abdomen');
+            $table->longText('rectal');
+            $table->longText('neura');
+            $table->longText('v/e');
+            $table->longText('respiratory(');
+            $table->longText('others');
             $table->timestamps();
         });
     }

@@ -15,6 +15,8 @@ class CreatePainPeriodicitiesTable extends Migration
     {
         Schema::create('pain_periodicities', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

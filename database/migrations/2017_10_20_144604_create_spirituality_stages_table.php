@@ -15,6 +15,9 @@ class CreateSpiritualityStagesTable extends Migration
     {
         Schema::create('spirituality_stages', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('stage');
+            $table->longText('development');
+            $table->longText('assessment');
             $table->timestamps();
         });
     }

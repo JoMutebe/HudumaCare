@@ -15,6 +15,8 @@ class CreateSchoolGoingChildrensTable extends Migration
     {
         Schema::create('school_going_childrens', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('social_assessment_id');
+            $table->integer('education_level_id');
             $table->timestamps();
         });
     }

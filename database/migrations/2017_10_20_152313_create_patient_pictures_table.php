@@ -15,6 +15,9 @@ class CreatePatientPicturesTable extends Migration
     {
         Schema::create('patient_pictures', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('size');
+            $table->string('caption');
+            $table->mime('file');
             $table->timestamps();
         });
     }

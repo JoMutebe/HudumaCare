@@ -15,6 +15,8 @@ class CreateHousingAndTransportationsTable extends Migration
     {
         Schema::create('housing_and_transportations', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('nature_id');
+            $table->string('comment');
             $table->timestamps();
         });
     }

@@ -15,6 +15,9 @@ class CreatePatientContributionsTable extends Migration
     {
         Schema::create('patient_contributions', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('status');
+            $table->integer('amount')->unsigned();
+
             $table->timestamps();
         });
     }

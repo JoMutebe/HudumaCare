@@ -15,6 +15,8 @@ class CreateCurrentReligionsTable extends Migration
     {
         Schema::create('current_religions', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('religion_id');
+            $table->longText('description');
             $table->timestamps();
         });
     }

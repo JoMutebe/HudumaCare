@@ -15,6 +15,8 @@ class CreateFamilyDistressesTable extends Migration
     {
         Schema::create('family_distresses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

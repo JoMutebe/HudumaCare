@@ -15,6 +15,9 @@ class CreateFamilyNatureOfSupportsTable extends Migration
     {
         Schema::create('family_nature_of_supports', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->integer('score');
+            $table->longText('description');
             $table->timestamps();
         });
     }

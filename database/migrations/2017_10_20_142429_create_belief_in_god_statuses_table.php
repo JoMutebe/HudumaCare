@@ -13,8 +13,11 @@ class CreateBeliefInGodStatusesTable extends Migration
      */
     public function up()
     {
-        Schema::create('belief_in_god_statuses', function (Blueprint $table) {
+        Schema::create('belief_in_God_statuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
+            
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateBeliefInGodStatusesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('belief_in_god_statuses');
+        Schema::dropIfExists('belief_in_God_statuses');
     }
 }

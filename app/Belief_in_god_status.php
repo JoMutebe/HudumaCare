@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Belief_in_god_status extends Model
+class Belief_in_God_status extends Model
 {
     //
     protected $fillable = [

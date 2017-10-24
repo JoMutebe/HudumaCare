@@ -15,6 +15,11 @@ class CreatePatientMedicationInterventionsTable extends Migration
     {
         Schema::create('patient_medication_interventions', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('doze');
+            $table->integer('route_id');
+            $table->integer('duration');
+            $table->integer('frequency');
             $table->timestamps();
         });
     }

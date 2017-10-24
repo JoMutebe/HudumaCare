@@ -15,6 +15,10 @@ class CreateVitalSignsPhysicalAssessmentsTable extends Migration
     {
         Schema::create('vital_signs_physical_assessments', function (Blueprint $table) {
             $table->increments('id');
+            $table->doubleval('pulse_rate');
+            $table->doubleval('bp');
+            $table->doubleval('temperature');
+            $table->doubleval('respiratory_rate');
             $table->timestamps();
         });
     }

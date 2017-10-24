@@ -15,6 +15,10 @@ class CreateFunctionsTable extends Migration
     {
         Schema::create('functions', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('walking');
+            $table->integer('dressing');
+            $table->integer('toileting');
+            $table->integer('self_care');
             $table->timestamps();
         });
     }

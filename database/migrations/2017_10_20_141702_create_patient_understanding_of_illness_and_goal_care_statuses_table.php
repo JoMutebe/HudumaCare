@@ -15,6 +15,8 @@ class CreatePatientUnderstandingOfIllnessAndGoalCareStatusesTable extends Migrat
     {
         Schema::create('patient_understanding_of_illness_and_goal_care_statuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

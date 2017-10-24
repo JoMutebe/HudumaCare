@@ -15,6 +15,8 @@ class CreateNightEffectStatusesTable extends Migration
     {
         Schema::create('night_effect_statuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

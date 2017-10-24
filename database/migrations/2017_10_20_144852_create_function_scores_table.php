@@ -15,6 +15,9 @@ class CreateFunctionScoresTable extends Migration
     {
         Schema::create('function_scores', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('score');
+            $table->string('key');
+            $table->longText('explanation');
             $table->timestamps();
         });
     }

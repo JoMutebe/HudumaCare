@@ -15,6 +15,9 @@ class CreateSleepEffectsTable extends Migration
     {
         Schema::create('sleep_effects', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('status_id');
+            $table->integer('night_sleep_id');
+            $table->longText('last_sleep_details');
             $table->timestamps();
         });
     }

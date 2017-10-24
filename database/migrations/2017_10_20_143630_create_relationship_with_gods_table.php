@@ -15,6 +15,8 @@ class CreateRelationshipWithGodsTable extends Migration
     {
         Schema::create('relationship_with_gods', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

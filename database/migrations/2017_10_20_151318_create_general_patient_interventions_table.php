@@ -15,6 +15,8 @@ class CreateGeneralPatientInterventionsTable extends Migration
     {
         Schema::create('general_patient_interventions', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

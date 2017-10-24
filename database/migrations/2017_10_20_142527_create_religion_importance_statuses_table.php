@@ -15,6 +15,8 @@ class CreateReligionImportanceStatusesTable extends Migration
     {
         Schema::create('religion_importance_statuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

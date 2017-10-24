@@ -16,6 +16,7 @@ class CreateOccupationsTable extends Migration
         Schema::create('occupations', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->integer('score');
             $table->longText('description');
             $table->timestamps();
         });

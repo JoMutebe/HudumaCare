@@ -15,6 +15,8 @@ class CreatePeaceWithGodStatusesTable extends Migration
     {
         Schema::create('peace_with_god_statuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }

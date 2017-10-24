@@ -15,6 +15,9 @@ class CreateHouseholdMembersTable extends Migration
     {
         Schema::create('household_members', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('social_assessment_id');
+            $table->integer('number');
+            $table->integer('relationship_id');
             $table->timestamps();
         });
     }

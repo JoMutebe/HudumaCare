@@ -15,6 +15,8 @@ class CreatePrayerHelpStatusesTable extends Migration
     {
         Schema::create('prayer_help_statuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
         });
     }
