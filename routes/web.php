@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+route::get('/', 'HudumaCareController@show');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
